@@ -15,4 +15,4 @@ jobs:
         uses: grafana/k6-action@v0.3.1
         with:
           filename: k6/workload.js
-          flags: --vus 100000000 --duration 60s
+          flags: --vus 270000 --duration 600s
