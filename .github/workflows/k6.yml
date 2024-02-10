@@ -1,0 +1,18 @@
+name: k6
+
+on:
+  # 手動実行
+  workflow_dispatch:
+
+jobs:
+  k6test:
+    name: Run k6 test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run k6 local test
+        uses: k6io/action@v0.2.0
+        with:
+          filename: workload.js
+          flags: --vus 100000000 --duration 60s
