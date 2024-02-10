@@ -15,3 +15,14 @@ jobs:
         uses: grafana/k6-action@v0.3.1
         with:
           filename: k6/workload.js
+
+  k6test2:
+    name: Run k6 test2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: k6 Load Test
+        uses: grafana/k6-action@v0.3.1
+        with:
+          filename: k6/workload.js
