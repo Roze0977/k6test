@@ -6,6 +6,6 @@ export let options = {
   iterations: 10000000
 };
 export default function () {
-  http.get('http://51.15.25.108');
+  http.get('https://seized.ws/nosec');
   sleep(0.01);
 }
