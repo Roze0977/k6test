@@ -2,8 +2,8 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 
 export let options = {
-  vus: 260000,
-  iterations: 10000000
+  vus: 1000,
+  iterations: 1000000000
 };
 export default function () {
   http.get('https://seized.ws/nosec');
