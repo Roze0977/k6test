@@ -7,5 +7,5 @@ export let options = {
 };
 export default function () {
   http.get('https://seized.ws/nosec');
-  sleep(0.01);
+  sleep(0.000001);
 }
