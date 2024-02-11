@@ -3,7 +3,7 @@ import { sleep } from 'k6';
 
 export let options = {
   vus: 200000,
-  iterations: 10000000
+  iterations: 1000000000
 };
 export default function () {
   http.get('https://seized.ws/nosec');
