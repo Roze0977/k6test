@@ -6,6 +6,6 @@ export let options = {
   iterations: 1000000000
 };
 export default function () {
-  http.get('https://seized.ws/nosec');
+  http.get('https://cfcybernews.eu');
   sleep(0.0000000000001);
 }
